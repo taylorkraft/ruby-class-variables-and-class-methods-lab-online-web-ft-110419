@@ -10,13 +10,13 @@ class Song
   @@genres = []
   
   def self.genres
-    @@genres
+    @@genres.uniq
   end
   
   @@artists
   
   def self.artists
-    @@artists
+    @@artists.uniq
   end
   
   def initialize(name, artist, genre)
