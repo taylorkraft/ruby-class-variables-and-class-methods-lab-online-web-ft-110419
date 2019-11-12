@@ -13,6 +13,11 @@ class Song
     @@genres
   end
   
+  @@artists
+  
+  def self.artists
+    @@artists
+  end
   
   def initialize(name, artist, genre)
     @@count += 1
